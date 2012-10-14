@@ -18,10 +18,10 @@ import com.drexelexp.review.Review;
  * 
  */
 public class Professor {
-	private int id;
 	private String name;
 	private List<Course> courses;
 	private List<Review> reviews;
+	private int id;
 	
 	public Professor() {
 		this.id = -1;
