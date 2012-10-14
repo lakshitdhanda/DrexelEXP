@@ -32,7 +32,8 @@ public class SubjectController {
 				.getAuthentication();
 		if (authentication.getName().equals("anonymousUser")) {
 			model.addAttribute("username", "");
-		} else {
+		} 
+		if(!authentication.getName().equals("anonymousUser")){
 			model.addAttribute("username", authentication.getName());
 		}
 	}
